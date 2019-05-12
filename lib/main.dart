@@ -1,16 +1,11 @@
 import 'package:flutter/material.dart';
 
+import './product_manager.dart';
+
 // Application entry point
 main() => runApp(App());
 
-class App extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return _AppState();
-  }
-}
-
-class _AppState extends State<App> {
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,24 +13,7 @@ class _AppState extends State<App> {
           appBar: AppBar(
             title: Text('Cats rock'),
           ),
-          body: Column(
-            children: [
-              Container(
-                margin: EdgeInsets.all(20.0),
-                child: RaisedButton(
-                  child: Text('Add'),
-                  onPressed: () {},
-                ),
-              ),
-              Card(
-                  child: Column(
-                children: <Widget>[
-                  Image.asset('assets/images/cat.jpg'),
-                  Text('Cat')
-                ],
-              )),
-            ],
-          )),
+          body: ProductManager()),
       debugShowCheckedModeBanner: false,
     );
   }
