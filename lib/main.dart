@@ -9,11 +9,16 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+          brightness: Brightness.light,
+          primarySwatch: Colors.orange,
+          accentColor: Colors.orangeAccent),
       home: Scaffold(
           appBar: AppBar(
-            title: Text('Cats rock'),
-          ),
-          body: ProductManager('Init')),
+              title: Center(
+            child: Text('Products'),
+          )),
+          body: ProductManager(startingProduct: 'Init product')),
       debugShowCheckedModeBanner: false,
     );
   }
