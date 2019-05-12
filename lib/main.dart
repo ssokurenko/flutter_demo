@@ -9,8 +9,12 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter Rocks'),
+          title: Text('Cats rock'),
         ),
+        body: Card(
+            child: Column(
+          children: <Widget>[Image.asset('assets/images/cat.jpg'), Text('Cat')],
+        )),
       ),
       debugShowCheckedModeBanner: false,
     );
