@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './product_manager.dart';
+import './widgets/product_manager.dart';
 
 // Application entry point
 main() => runApp(App());
@@ -13,7 +13,7 @@ class App extends StatelessWidget {
           appBar: AppBar(
             title: Text('Cats rock'),
           ),
-          body: ProductManager()),
+          body: ProductManager('Init')),
       debugShowCheckedModeBanner: false,
     );
   }
