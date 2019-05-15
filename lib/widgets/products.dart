@@ -20,6 +20,13 @@ class Products extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (products.length == 0) {
+      return Center(
+        child: Container(
+          child: Text('No products, please tap the Add button'),
+        ),
+      );
+    }
     return ListView.builder(
       itemBuilder: _buildProductItem,
       itemCount: products.length,

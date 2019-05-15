@@ -23,7 +23,7 @@ class App extends StatelessWidget {
               title: Center(
             child: Text('Timon Merch Store'),
           )),
-          body: ProductManager(startingProduct: 'Init product'),
+          body: ProductManager(),
           bottomNavigationBar: BottomAppBar(
       child: Container(height: 50.0,),
     ),
