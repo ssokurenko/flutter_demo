@@ -16,14 +16,24 @@ class App extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
           brightness: Brightness.light,
-          primarySwatch: Colors.orange,
-          accentColor: Colors.orangeAccent),
+          primarySwatch: Colors.blue,
+          accentColor: Colors.blueAccent),
       home: Scaffold(
           appBar: AppBar(
               title: Center(
-            child: Text('Products'),
+            child: Text('Timon Merch Store'),
           )),
-          body: ProductManager(startingProduct: 'Init product')),
+          body: ProductManager(startingProduct: 'Init product'),
+          bottomNavigationBar: BottomAppBar(
+      child: Container(height: 50.0,),
+    ),
+    floatingActionButton: FloatingActionButton(
+      onPressed: () => {},
+      tooltip: 'Add',
+      child: Icon(Icons.add),
+    ),
+    floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,),
+        
       debugShowCheckedModeBanner: false,
     );
   }
