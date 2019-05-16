@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import './product_manager.dart';
+import '../widgets/product_manager.dart';
 
-class ProductScaffold extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
           title: Center(

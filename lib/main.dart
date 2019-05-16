@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import './widgets/product_scaffold.dart';
+import './pages/home.dart';
 
 // Application entry point
 main() {
@@ -18,7 +18,7 @@ class App extends StatelessWidget {
           brightness: Brightness.light,
           primarySwatch: Colors.blue,
           accentColor: Colors.blueAccent),
-      home: ProductScaffold(),        
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
