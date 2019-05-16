@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import './widgets/product_manager.dart';
+import './widgets/product_scaffold.dart';
 
 // Application entry point
 main() {
@@ -18,22 +18,7 @@ class App extends StatelessWidget {
           brightness: Brightness.light,
           primarySwatch: Colors.blue,
           accentColor: Colors.blueAccent),
-      home: Scaffold(
-          appBar: AppBar(
-              title: Center(
-            child: Text('Timon Merch Store'),
-          )),
-          body: ProductManager(),
-          bottomNavigationBar: BottomAppBar(
-      child: Container(height: 50.0,),
-    ),
-    floatingActionButton: FloatingActionButton(
-      onPressed: () => {},
-      tooltip: 'Add',
-      child: Icon(Icons.add),
-    ),
-    floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,),
-        
+      home: ProductScaffold(),        
       debugShowCheckedModeBanner: false,
     );
   }
