@@ -10,7 +10,10 @@ class ProductControl extends StatelessWidget {
     return RaisedButton(
         color: Theme.of(context).primaryColor,
         onPressed: () {
-          this.addProduct('New product');
+          this.addProduct({
+            'title': 'MacBook Pro',
+            'imageUrl': 'assets/images/product.jpg'
+          });
         },
         child: Text('Add'));
   }
