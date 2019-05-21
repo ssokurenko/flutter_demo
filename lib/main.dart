@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import './pages/home.dart';
+import './pages/auth.dart';
 
 // Application entry point
 main() {
@@ -18,7 +18,7 @@ class App extends StatelessWidget {
           brightness: Brightness.light,
           primarySwatch: Colors.blue,
           accentColor: Colors.blueAccent),
-      home: HomePage(),
+      home: AuthPage(),
       debugShowCheckedModeBanner: false,
     );
   }
