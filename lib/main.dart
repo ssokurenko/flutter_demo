@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 import './pages/auth.dart';
 
 // Application entry point
 main() {
-  // Debug painting
-  // debugPaintSizeEnabled = true;
   runApp(App());
 }
 
